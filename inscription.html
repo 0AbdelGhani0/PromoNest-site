@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription - PromoNest</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="form-styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container-nav">
+                <div class="logo-container">
+                    <img src="logo.png" alt="PromoNest" class="logo-img">
+                    <span class="brand-name">PromoNest</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="index.html#concept">Comment ça marche</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="form-page">
+        <section class="form-hero">
+            <div class="container">
+                <div class="form-wrapper">
+                    <div class="form-header">
+                        <h1>Rejoignez PromoNest</h1>
+                        <p>Commencez à gagner de l'argent sur vos achats dès aujourd'hui</p>
+                    </div>
+
+                    <!-- Formulaire -->
+                    <form id="inscriptionForm" class="modern-form">
+                        <div class="form-row">
+                            <div class="input-group">
+                                <label for="nom">Nom *</label>
+                                <input type="text" id="nom" name="nom" required placeholder="Votre nom">
+                            </div>
+
+                            <div class="input-group">
+                                <label for="prenom">Prénom *</label>
+                                <input type="text" id="prenom" name="prenom" required placeholder="Votre prénom">
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="pays">Pays *</label>
+                            <select id="pays" name="pays" required>
+                                <option value="">Sélectionnez votre pays</option>
+                                <option value="France">🇫🇷 France</option>
+                                <option value="Belgique">🇧🇪 Belgique</option>
+                                <option value="Suisse">🇨🇭 Suisse</option>
+                                <option value="Luxembourg">🇱🇺 Luxembourg</option>
+                                <option value="Canada">🇨🇦 Canada</option>
+                                <option value="Autre">🌍 Autre</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="interet">Pourquoi êtes-vous intéressé par nos produits ? *</label>
+                            <textarea id="interet" name="interet" rows="4" required placeholder="Expliquez-nous en quelques lignes ce qui vous intéresse dans le cashback cumulé..."></textarea>
+                            <span class="helper-text">Minimum 20 caractères</span>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="referent">Qui vous a parlé de nous ? *</label>
+                            <input type="text" id="referent" name="referent" required placeholder="Réseau social, bouche à oreille, publicité...">
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <span class="btn-text">Envoyer ma demande</span>
+                            <span class="btn-icon">→</span>
+                        </button>
+                    </form>
+
+                    <!-- Message de confirmation (caché par défaut) -->
+                    <div id="confirmationMessage" class="confirmation-box" style="display: none;">
+                        <div class="success-animation">
+                            <div class="checkmark">✓</div>
+                        </div>
+                        <h2>Merci pour votre inscription !</h2>
+                        <p>Nous avons bien reçu vos informations et nous allons les examiner attentivement.</p>
+                        <p class="confirmation-detail">Notre équipe vous recontactera prochainement pour vous présenter nos meilleures opportunités de cashback.</p>
+                        <a href="index.html" class="back-home-btn">Retour à l'accueil</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="PromoNest" class="footer-logo-img">
+                    <span>PromoNest</span>
+                </div>
+                <p class="footer-legal">© 2024 PromoNest. Tous droits réservés.</p>
+                <p class="footer-note">Toutes nos activités respectent les CGU des plateformes partenaires.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
