@@ -1,4 +1,4 @@
-# 🦅 PromoNest - Site Web v2
+# 🦅 PromoNest - Site Web v3 (Version finale)
 
 Site web moderne pour PromoNest avec design inspiré d'Ibotta.
 
@@ -6,144 +6,137 @@ Site web moderne pour PromoNest avec design inspiré d'Ibotta.
 
 ```
 promonest-v2/
-├── index.html          # Page d'accueil moderne
-├── inscription.html    # Page de formulaire
+├── index.html          # Page d'accueil
+├── inscription.html    # Formulaire d'inscription
+├── a-propos.html       # Page À propos (nouvelle)
 ├── styles.css          # Styles principaux
-├── form-styles.css     # Styles du formulaire
-├── script.js           # JavaScript pour le formulaire
-├── logo.png            # Votre logo PromoNest
-└── README.md          # Ce fichier
+├── form-styles.css     # Styles formulaire
+├── about-styles.css    # Styles page À propos (nouveau)
+├── script.js           # JavaScript
+├── logo.png            # Logo PromoNest
+├── cgu.pdf             # ⚠️ À AJOUTER : Vos CGU en PDF
+└── README.md           # Ce fichier
 ```
 
-## ✨ Nouveautés v2
+## ✨ Nouveautés v3
 
-### Design moderne inspiré d'Ibotta
-- ✅ Fond dégradé coloré avec les couleurs du logo
-- ✅ Logo PromoNest intégré dans la navigation
-- ✅ Animations fluides sur les cards de produits
-- ✅ Hero section dynamique avec statistiques
-- ✅ Formulaire stylé avec validation en temps réel
-- ✅ Message de confirmation animé
-- ✅ Design 100% responsive (mobile, tablette, desktop)
+### Statistiques mises à jour
+- ✅ **68% cashback moyen** (conservé)
+- ✅ **100+ marques partenaires** (nouveau)
+- ✅ **Sous 30 jours** pour le remboursement (nouveau)
 
-### Fonctionnalités
-- Page d'accueil attrayante
-- Section "Comment ça marche" avec 3 étapes
-- Exemple concret de surplus cashback
-- Liste des plateformes surveillées
-- Formulaire d'inscription complet
-- Validation côté client
-- Aucun backend requis (purement visuel)
+### Section marques
+- ✅ Affichage des **marques de produits** (Ariel, Lenor, Oral-B, etc.)
+- ✅ Plus de mention des plateformes de cashback
 
-## 🚀 Déploiement sur Netlify
+### Nouvelle page "À propos"
+- ✅ Présentation vendeuse de PromoNest
+- ✅ Mission et promesses
+- ✅ Coordonnées de contact :
+  - Email : **achahed111@gmail.com**
+  - Téléphone : **+33 7 55 99 32 87**
 
-### Méthode 1 : Drag & Drop (la plus simple)
+### Lien CGU
+- ✅ Lien dans la navigation vers un PDF
+- ⚠️ **ACTION REQUISE** : Ajoutez votre fichier `cgu.pdf` dans le dossier
 
-1. **Allez sur Netlify**
-   - Ouvrez [netlify.com](https://netlify.com)
-   - Créez un compte gratuit (ou connectez-vous)
+## 🚀 Déploiement sur Netlify + promonest.eu
 
-2. **Déployez votre site**
-   - Cliquez sur "Add new site" > "Deploy manually"
-   - Glissez-déposez **tout le dossier `promonest-v2`**
-   - Votre site sera en ligne en quelques secondes !
-   - Netlify vous donnera une URL temporaire (ex: `random-name-123.netlify.app`)
+### Étape 1 : Préparer les fichiers
+1. Téléchargez tous les fichiers
+2. **IMPORTANT** : Ajoutez votre fichier `cgu.pdf` dans le dossier
+   - Si vous n'avez pas encore de CGU, vous pouvez :
+     * Renommer temporairement le lien en "Mentions légales"
+     * Ou créer un PDF simple en attendant
 
-3. **Connectez votre domaine promonest.eu**
-   - Dans Netlify : "Domain settings" > "Add custom domain"
-   - Entrez `promonest.eu`
-   - Netlify vous donnera des enregistrements DNS à configurer
+### Étape 2 : Déployer sur Netlify
+1. Allez sur [netlify.com](https://netlify.com)
+2. Connectez-vous avec votre compte
+3. Cliquez sur "Add new site" > "Deploy manually"
+4. Glissez-déposez **tout le dossier `promonest-v2`**
+5. Votre site sera en ligne en quelques secondes !
 
-4. **Configurez les DNS sur OVH**
-   - Connectez-vous à votre espace client OVH
-   - Allez dans la gestion de `promonest.eu`
-   - Section "Zone DNS"
-   - Ajoutez les enregistrements fournis par Netlify :
-     * Type A : `185.199.108.153`
-     * Type A : `185.199.109.153`
-     * Type A : `185.199.110.153`
-     * Type A : `185.199.111.153`
-     * Ou suivez exactement les instructions de Netlify
-   - Attendez 1-2h pour la propagation DNS
+### Étape 3 : Connecter votre domaine promonest.eu
 
-5. **C'est terminé ! 🎉**
-   - Votre site sera accessible sur `https://promonest.eu`
-   - Certificat SSL automatique (HTTPS)
-   - Hébergement gratuit à vie
+**Dans Netlify :**
+1. Allez dans "Domain settings"
+2. Cliquez sur "Add custom domain"
+3. Entrez : `promonest.eu`
+4. Netlify vous donnera des enregistrements DNS à configurer
 
-### Méthode 2 : Via GitHub (pour les développeurs)
+**Dans votre espace client OVH :**
+1. Connectez-vous sur ovh.com
+2. Allez dans la gestion de `promonest.eu`
+3. Section "Zone DNS"
+4. Ajoutez ces enregistrements A (fournis par Netlify) :
+   ```
+   Type A : 75.2.60.5
+   ```
+   Ou suivez exactement les instructions DNS données par Netlify
 
-1. **Créez un repository GitHub**
-   - Créez un nouveau repo sur github.com
-   - Uploadez tous les fichiers de `promonest-v2`
+5. **Attendez 1-2h** pour la propagation DNS
 
-2. **Connectez à Netlify**
-   - Sur Netlify : "Add new site" > "Import from Git"
-   - Connectez votre compte GitHub
-   - Sélectionnez le repo
-   - Netlify déploiera automatiquement à chaque commit
+### Étape 4 : Vérification
+- Votre site sera accessible sur `https://promonest.eu`
+- Certificat SSL automatique (HTTPS sécurisé)
+- Hébergement gratuit illimité
 
-3. **Configurez le domaine** (même méthode que ci-dessus)
+## 📝 Si vous n'avez pas encore de CGU
+
+**Option 1 - Temporaire** : Renommer le lien
+
+Dans `index.html`, `a-propos.html` et `inscription.html`, changez :
+```html
+<li><a href="cgu.pdf" target="_blank">CGU</a></li>
+```
+en :
+```html
+<li><a href="a-propos.html#contact">Contact</a></li>
+```
+
+**Option 2 - Créer un CGU simple** :
+Utilisez un générateur en ligne comme :
+- [legalplace.fr](https://www.legalplace.fr/outils-juridiques/cgu/)
+- [rocket-lawyer.com](https://www.rocketlawyer.com/)
+
+Exportez en PDF et nommez-le `cgu.pdf`
 
 ## 🎨 Personnalisation
 
 ### Changer les couleurs
-Modifiez les variables CSS dans `styles.css` (lignes 8-17) :
+Fichier `styles.css`, lignes 8-17 :
 ```css
 :root {
-    --primary: #5B8DBE;        /* Bleu principal */
-    --accent: #D4A574;          /* Accent doré */
-    --success: #10b981;         /* Vert cashback */
-    /* ... */
+    --primary: #5B8DBE;
+    --accent: #D4A574;
+    --success: #10b981;
 }
 ```
 
 ### Modifier les textes
-Éditez directement dans `index.html` et `inscription.html`
+Éditez directement dans les fichiers HTML
 
-### Ajouter des sections
-Copiez/collez une section existante et modifiez le contenu
+### Changer les marques affichées
+Dans `index.html`, section "Vos marques préférées"
 
 ## 📱 Compatibilité
 
-- ✅ Desktop (1920px+)
-- ✅ Laptop (1024px - 1920px)
-- ✅ Tablette (768px - 1024px)
-- ✅ Mobile (320px - 768px)
+- ✅ Desktop, Laptop, Tablette, Mobile
+- ✅ Chrome, Firefox, Safari, Edge
+- ✅ Responsive design natif
 
-## 🔧 Technologies utilisées
+## 📧 Contact
 
-- HTML5
-- CSS3 (animations, gradients, flexbox, grid)
-- JavaScript vanilla (pas de framework)
-- Design responsive natif
+Des questions sur le déploiement ?
+- Email : achahed111@gmail.com
+- Téléphone : +33 7 55 99 32 87
 
-## ⚠️ Important
-
-Ce site est **purement visuel** pour l'instant :
-- Le formulaire ne stocke aucune donnée
-- Aucun email n'est envoyé
-- Le message de confirmation est simulé
-
-Pour collecter réellement les données, vous devrez ajouter :
-- Un backend (Node.js, PHP, Python)
-- Une base de données (PostgreSQL, MongoDB)
-- Ou un service tiers (Formspree, EmailJS, Google Sheets API)
-
-## 💰 Coûts
+## 💰 Coûts récapitulatifs
 
 - **Domaine promonest.eu** : ~10-15€/an (OVH)
 - **Hébergement Netlify** : 0€ (gratuit à vie)
 - **Total** : 10-15€/an
 
-## 🆘 Besoin d'aide ?
-
-Si vous rencontrez un problème :
-1. Vérifiez que tous les fichiers sont bien dans le même dossier
-2. Assurez-vous que `logo.png` est présent
-3. Ouvrez la console du navigateur (F12) pour voir les erreurs
-4. Vérifiez que les DNS sont bien configurés
-
 ---
 
-**PromoNest** - Transformez vos achats en profits 🦅
+**PromoNest** - Vos courses, presque gratuites 🦅

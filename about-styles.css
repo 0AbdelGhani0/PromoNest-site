@@ -1,0 +1,287 @@
+/* About Page Styles */
+
+.about-page {
+    background: var(--white);
+}
+
+.about-hero {
+    background: linear-gradient(135deg, #5B8DBE 0%, #7BA5CC 50%, #D4A574 100%);
+    color: var(--white);
+    padding: 5rem 0 3rem;
+    text-align: center;
+}
+
+.page-title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.page-subtitle {
+    font-size: 1.4rem;
+    opacity: 0.95;
+}
+
+/* Content Sections */
+.mission-section,
+.how-it-works-section,
+.promise-section,
+.why-section,
+.contact-section {
+    padding: 4rem 0;
+}
+
+.mission-section {
+    background: var(--bg-light);
+}
+
+.how-it-works-section {
+    background: var(--white);
+}
+
+.promise-section {
+    background: var(--bg-light);
+}
+
+.why-section {
+    background: var(--white);
+}
+
+.contact-section {
+    background: var(--bg-light);
+}
+
+/* Content Blocks */
+.content-block {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.block-icon {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.content-block h2 {
+    font-size: 2.5rem;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.content-block p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+}
+
+.content-block strong {
+    color: var(--primary);
+}
+
+/* Promise Grid */
+.promise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.promise-card {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.promise-card:hover {
+    transform: translateY(-10px);
+}
+
+.promise-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.promise-card h3 {
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.promise-card p {
+    font-size: 1.1rem;
+    color: var(--text-gray);
+    line-height: 1.7;
+}
+
+/* Why List */
+.why-list {
+    margin-top: 2rem;
+}
+
+.why-item {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    background: var(--bg-light);
+    border-radius: 15px;
+}
+
+.why-check {
+    font-size: 2rem;
+    color: var(--success);
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.why-item p {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+/* Contact Section */
+.contact-intro {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--text-gray);
+    margin-bottom: 3rem;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-card {
+    background: var(--white);
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+}
+
+.contact-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-card h3 {
+    font-size: 1.5rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.contact-link {
+    display: block;
+    font-size: 1.3rem;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s;
+}
+
+.contact-link:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
+.contact-note {
+    font-size: 1rem;
+    color: var(--text-gray);
+    font-style: italic;
+}
+
+/* CTA About */
+.cta-about {
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    color: var(--white);
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.cta-about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.cta-about p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+}
+
+.cta-btn-large {
+    display: inline-block;
+    background: var(--white);
+    color: var(--primary);
+    padding: 1.3rem 3rem;
+    border-radius: 30px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.cta-btn-large:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Logo link fix */
+.logo-container a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2.5rem;
+    }
+
+    .page-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .content-block h2 {
+        font-size: 2rem;
+    }
+
+    .content-block p {
+        font-size: 1.1rem;
+    }
+
+    .promise-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .why-item {
+        flex-direction: column;
+        text-align: center;
+    }
+}
