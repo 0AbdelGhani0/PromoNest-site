@@ -354,28 +354,47 @@ body {
     font-size: 1.1rem;
 }
 
-.cashback-breakdown {
+.cashback-flow {
     margin-bottom: 2rem;
-}
-
-.cashback-row {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
+    padding: 2rem;
     background: var(--bg-light);
-    margin-bottom: 0.8rem;
-    border-radius: 12px;
+    border-radius: 15px;
 }
 
-.platform-name {
-    font-weight: 600;
+.flow-step {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--white);
+    border-radius: 12px;
+    margin-bottom: 0.5rem;
+}
+
+.flow-icon {
+    font-size: 2rem;
+}
+
+.flow-text {
+    font-size: 1.1rem;
     color: var(--text-dark);
 }
 
-.cashback-percent {
-    font-weight: 700;
+.flow-arrow {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--primary);
+    margin: 0.5rem 0;
+}
+
+.highlight-step {
+    background: linear-gradient(135deg, rgba(91, 141, 190, 0.1), rgba(212, 165, 116, 0.1));
+    border: 2px solid var(--accent);
+}
+
+.highlight-step .flow-text strong {
+    color: var(--accent);
     font-size: 1.2rem;
-    color: var(--success);
 }
 
 .total-result {
@@ -413,26 +432,50 @@ body {
     font-size: 1.5rem;
 }
 
-/* Platforms */
-.platforms-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
+/* Platforms / Features */
+.section-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--text-gray);
+    max-width: 800px;
+    margin: -2rem auto 3rem;
+    line-height: 1.8;
 }
 
-.platform-item {
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.feature-item {
+    text-align: center;
+    padding: 2rem;
     background: var(--white);
-    color: var(--primary);
-    padding: 1rem 2rem;
-    border-radius: 30px;
-    font-weight: 600;
-    box-shadow: 0 3px 15px rgba(91, 141, 190, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s;
 }
 
-.platform-item:hover {
+.feature-item:hover {
     transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.feature-item h3 {
+    font-size: 1.3rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.feature-item p {
+    color: var(--text-gray);
 }
 
 /* CTA Final */
